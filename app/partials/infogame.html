@@ -1,0 +1,18 @@
+<div id="gamebox">
+	<div ng-repeat="game in games">
+		<table>
+			<tr>
+				<td>{{game.name}}</td>
+				<td>{{game.url}}</td>
+				<td>{{game.stat}}</td>
+			</tr>
+			<tr>
+				<td><a href="#/dash">Dashboard</a></td>
+				<td><a href="#/bugs">BugReport</a></td>
+				<td><a href="#/?TODO.html">Edit</a></td>
+			</tr>
+
+		</table>
+	</div>
+	<a href="#/?TODO.html">Add New</a>
+</div>

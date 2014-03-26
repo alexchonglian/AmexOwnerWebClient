@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" ng-app="dormCatApp">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet/less" type="text/css" href="css/flat-ui.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div id='header'>
+    <span>Owner Home</span>
+      <ul>
+        <li><a href='#/home'>Home</a></li>
+        <li><a href='#/roles'>Roles</a></li>
+        <li><a href='#/menu'>Menu</a></li>
+        <li><a href='#/report'>Report</a></li>
+        <li><a href='#/settings'>Settings</a></li>
+      </ul>
+  </div>
+
+  <div class='view-animate-container'>
+    <div ng-view class='view-animate'>
+    </div>
+  </div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="lib/angular/angular-animate.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+  <script>
+  less = {
+    env: "development",
+    async: false,
+    fileAsync: false,
+    poll: 1000,
+    functions: {},
+    dumpLineNumbers: "comments",
+    relativeUrls: false,
+    rootpath: "./"
+  };
+  </script>
+  <link rel="stylesheet/less" type="text/css" href="less/app.less" />
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,75 @@
+@wetasphalt:#34495e;
+@font-face{
+    font-family:'linkfont';
+    src:url('less/fonts/Franchise-Bold.ttf');
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+#header{
+	background-color: @wetasphalt;
+	font-family:linkfont;
+	font-size: 20px;
+    overflow:auto;
+    min-height:50px;
+    text-align: center;
+    color:white;
+    padding-top:10px;
+    ul{
+        width:30%;
+        display:inline;
+        float:right;
+        li {
+        	display:inline;
+        	margin:10px 10px;
+        	a{
+        	    text-decoration: none;
+        	    padding-bottom:0px;
+        	   	color:white;
+        	}
+        	a:hover {
+        	   border-bottom:5px solid;
+        	}
+        }
+    }
+}
+ 
+.view-animate {
+  padding:10px;
+}
+ 
+.view-animate.ng-enter, .view-animate.ng-leave {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+  display:block;
+  width:100%;
+  border-left:1px solid black;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:10px;
+}
+ 
+.view-animate.ng-enter {
+  left:100%;
+}
+
+.view-animate.ng-enter.ng-enter-active {
+  left:0;
+}
+
+.view-animate.ng-leave.ng-leave-active {
+  left:-100%;
+}
+
+.view-animate-container {   
+     overflow:auto;
+     display:block;
+     height:100px;
+     position:relative;
+ }

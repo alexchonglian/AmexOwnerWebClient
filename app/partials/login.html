@@ -1,0 +1,16 @@
+<div class='loginform'>
+	<form>
+		<div>
+			Owner ID: <input type='text' ng-model='devId'>
+		</div>
+		<div>
+			Password: <input type='password' ng-model='password'>
+		</div>
+		<div>
+			<button class='btn btn-embossed btn-inverse' ng-click='submitLogin()'>Log In</button>
+		</div>
+		<div>
+			<p ng-bind-html="userInfo"></p>
+		</div>
+	</form>
+</div>
